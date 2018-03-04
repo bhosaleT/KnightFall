@@ -22,7 +22,7 @@ public class DestroyOverTime : MonoBehaviour {
          */
          
         lifeTime = lifeTime - Time.deltaTime;
-
+         
         if (lifeTime <= 0)
         {
             Destroy(gameObject);

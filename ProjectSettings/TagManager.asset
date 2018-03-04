@@ -44,8 +44,14 @@ TagManager:
   - name: Background
     uniqueID: 110386171
     locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: BackgroundPlants
     uniqueID: 338270173
+    locked: 0
+  - name: WorldObjects
+    uniqueID: 1870394013
     locked: 0
   - name: ForeGround
     uniqueID: 698164535
@@ -55,7 +61,4 @@ TagManager:
     locked: 0
   - name: WaterFalls
     uniqueID: 2937512383
-    locked: 0
-  - name: Default
-    uniqueID: 0
     locked: 0

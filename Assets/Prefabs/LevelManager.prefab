@@ -51,5 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70288221fab53c48a7ca13bf710c0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToRespawn: 2
+  waitToRespawn: 1
   player: {fileID: 0}
+  deathSplosion: {fileID: 1555333812745152, guid: 8879e8ede6dc7634c84952c24ba39b94,
+    type: 2}
