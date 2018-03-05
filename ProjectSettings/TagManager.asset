@@ -59,6 +59,9 @@ TagManager:
   - name: Player
     uniqueID: 1735659077
     locked: 0
+  - name: Collectibles
+    uniqueID: 1561740277
+    locked: 0
   - name: WaterFalls
     uniqueID: 2937512383
     locked: 0

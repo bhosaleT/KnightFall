@@ -51,7 +51,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 68ca99531c894873a512f312145aabaa Assembly-CSharp.dll:.PlayerController
-e19b6f18baf97c30d2a9e72fc02f3ea7 Assembly-CSharp.dll:.LevelManager
+bda05439c6bf823114e50fd648645220 Assembly-CSharp.dll:.LevelManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -116,6 +116,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 43a98e447c8552b8a72bf20dd4b11e5b Assembly-CSharp.dll:Cinemachine.CinemachineFreeLook
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+d123a810c2f76bc7e17d551adc37b1cb Assembly-CSharp.dll:.Coin
 acbc5cb550fd73551fc3f7462a1c830c Assembly-CSharp.dll:Cinemachine.NoiseSettings
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -126,7 +127,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 6af7378a45ad6da4992a71ef50ddc2eb Assembly-CSharp.dll:Cinemachine.Timeline.CinemachineTrack
 ee8b76e8f88cba9c552d18d101f8844a Assembly-CSharp.dll:Cinemachine.CinemachineFramingTransposer
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HurtPlayer
+392a7544aa2a446b4fd9b77299c169fc Assembly-CSharp.dll:.HurtPlayer
 561d8a748a691ab52a6e3c3f0182945a Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
 ed9279a9d1042bde3a6ae6cd0c1a92fa Assembly-CSharp.dll:Cinemachine.CinemachinePOV
 c9f15fe3964fb30bb2cb167d7e7d6041 Assembly-CSharp.dll:.CameraController
