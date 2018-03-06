@@ -68,7 +68,7 @@ public class LevelManager : MonoBehaviour {
     public void AddCoins(int coinsToAdd)
     {
         coinCount += coinsToAdd;
-        Debug.Log(coinCount);
+        
         myCoinText.text = "X " + coinCount;
     }
 
