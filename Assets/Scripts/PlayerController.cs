@@ -20,6 +20,19 @@ public class PlayerController : MonoBehaviour {
     public Vector3 respawnPosition;
     public LevelManager theLevelManager;
 
+    public GameObject stompBox;
+
+    public float knockBackForce;
+    public float knockBackLength;
+    private float knockBackCounter;
+
+
+    public float invincibilityLength;
+    private float invincibilityCounter;
+
+    public AudioSource hurtSound;
+    
+
 	// Use this for initialization
 	void Start () {
 
@@ -34,30 +47,74 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);// this draws a virtual circle and then checks all the attributes
+        if (knockBackCounter <= 0)
+        {
+            if (Input.GetAxisRaw("Horizontal") > 0f) // if input on horizontal axis is greater that zero (RIGHT).
+            {
+                playerBody.velocity = new Vector3(moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+            else if (Input.GetAxisRaw("Horizontal") < 0f) // if input on horizontal axis is less that zero. (LEFT)
+            {
+                playerBody.velocity = new Vector3(-moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else
+            {
+                playerBody.velocity = new Vector3(0f, playerBody.velocity.y, 0f);//stop when no input.
+            }
 
-        if (Input.GetAxisRaw("Horizontal") > 0f) // if input on horizontal axis is greater that zero (RIGHT).
-        {
-            playerBody.velocity = new Vector3(moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if (Input.GetAxisRaw("Horizontal") < 0f) // if input on horizontal axis is less that zero. (LEFT)
-        {
-            playerBody.velocity = new Vector3(-moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else
-        {
-            playerBody.velocity = new Vector3(0f, playerBody.velocity.y, 0f);//stop when no input.
-        }
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
+                playerBody.velocity = new Vector3(playerBody.velocity.x, jumpSpeed, 0f); //the x axis should stay the same to add direction to the jump.
+            }
+          
+            if (invincibilityCounter > 0)
+            {
+                invincibilityCounter -= Time.deltaTime;
+            }
 
-            playerBody.velocity = new Vector3(playerBody.velocity.x, jumpSpeed, 0f); //the x axis should stay the same to add direction to the jump.
+            if (invincibilityCounter <= 0 )
+            {
+                theLevelManager.invinsible = false;
+            }
+
+        }
+        if (knockBackCounter > 0)
+        {
+            knockBackCounter -= Time.deltaTime;
+            //check which direction the player is facing and then knock him back in the opposite direction.
+            if (transform.localScale.x > 0)
+            {
+               
+                playerBody.velocity = new Vector3(-knockBackForce, knockBackForce, 0f);
+            }
+            else
+            {
+              
+                playerBody.velocity = new Vector3(knockBackForce, knockBackForce, 0f);
+            }
         }
 
         myAnim.SetFloat("Speed", Mathf.Abs(playerBody.velocity.x)); //math function.abs gives the absolute value.[unsigned]
         myAnim.SetBool("Ground", isGrounded);
+
+        if (playerBody.velocity.y < 0)
+        {
+            stompBox.SetActive(true); //the stompbox should only be active when the player falls down.
+        }
+        else
+        {
+            stompBox.SetActive(false);
+        }
+    }
+
+    public void KnockBack()
+    {
+        knockBackCounter = knockBackLength;
+        invincibilityCounter = invincibilityLength;
+        theLevelManager.invinsible = true;
     }
 
     void OnTriggerEnter2D(Collider2D other)

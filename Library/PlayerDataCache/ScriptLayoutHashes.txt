@@ -18,6 +18,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ScriptingExample
 4c75752238fd236ce350bb4f9dc2936d Assembly-CSharp.dll:Cinemachine.CinemachineFollowZoom
 197d4eb2be50dae6e083e910f9a35a5a Assembly-CSharp.dll:.CinemachineExampleWindow
+a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.EnemeyController
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -50,8 +51,8 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-68ca99531c894873a512f312145aabaa Assembly-CSharp.dll:.PlayerController
-bda05439c6bf823114e50fd648645220 Assembly-CSharp.dll:.LevelManager
+0594ee05797f73f376193dfc1908e7d4 Assembly-CSharp.dll:.PlayerController
+3733baee249aa4517a241b51f7bf8401 Assembly-CSharp.dll:.LevelManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -100,6 +101,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+ea9dc4153bd86db132184e365b67f3b4 Assembly-CSharp.dll:.HealthPickUp
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -114,6 +116,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+79e85ea1b6e20d92f479008c6c20cf6f Assembly-CSharp.dll:.Stomp
 43a98e447c8552b8a72bf20dd4b11e5b Assembly-CSharp.dll:Cinemachine.CinemachineFreeLook
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 d123a810c2f76bc7e17d551adc37b1cb Assembly-CSharp.dll:.Coin
@@ -131,6 +134,7 @@ ee8b76e8f88cba9c552d18d101f8844a Assembly-CSharp.dll:Cinemachine.CinemachineFram
 561d8a748a691ab52a6e3c3f0182945a Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
 ed9279a9d1042bde3a6ae6cd0c1a92fa Assembly-CSharp.dll:Cinemachine.CinemachinePOV
 c9f15fe3964fb30bb2cb167d7e7d6041 Assembly-CSharp.dll:.CameraController
+45b80f4efaa9965abdb5e3c5469bb7d3 Assembly-CSharp.dll:.PatrollingEnemy
 61a13d8f72f69fbb8c87ee8c414b086f Assembly-CSharp.dll:Cinemachine.CinemachineOrbitalTransposer
 af35398f9c04a4f21b82c9bedb1a5ebf Assembly-CSharp.dll:Cinemachine.CinemachineComposer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
@@ -185,4 +189,4 @@ ef47b5b296e56702c76218de521ccc37 Assembly-CSharp.dll:Cinemachine.CinemachineBrai
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
 506e030fa92c58e7a9fb2a4b86130357 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 9dd74a41363b134db6b934985dfd2f92 Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
-a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.EnemeyController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetOnRespawn

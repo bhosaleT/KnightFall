@@ -15,7 +15,7 @@ public class Coin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+	
 	}
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,7 +23,8 @@ public class Coin : MonoBehaviour {
         if (other.tag == "Player")
         {
             thelevelManager.AddCoins(coinValue);
-            Destroy(gameObject);
+            // Destroy(gameObject);
+            gameObject.SetActive(false);
             Instantiate(coinSplosion, transform.position, Quaternion.identity);
             
         }

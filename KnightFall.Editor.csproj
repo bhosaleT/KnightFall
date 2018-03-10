@@ -346,6 +346,7 @@
   <ItemGroup>
     <None Include="Assets\Add-Ons\2D Extras\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
     <None Include="Assets\Add-Ons\Cinemachine\ReleaseNotes.txt" />
+    <None Include="Assets\Text\demo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

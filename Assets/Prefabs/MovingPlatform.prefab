@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 61684187791152972}
   m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1359134107194868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187.07, y: 3.49, z: 0}
+  m_LocalPosition: {x: 1.161541, y: 3.6748304, z: -0.094834246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4316061330822088}
@@ -186,7 +186,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617687341112884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.88, z: 0}
+  m_LocalPosition: {x: -7.3, y: -5.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4590069253614204}
@@ -212,7 +212,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622620703169580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.66, z: 0}
+  m_LocalPosition: {x: 0, y: -5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4590069253614204}
@@ -257,7 +257,7 @@ MonoBehaviour:
   objectToMove: {fileID: 1107447175298766}
   startPoint: {fileID: 4959515207548508}
   endPoint: {fileID: 4716959863715822}
-  moveSpeed: 4
+  moveSpeed: 3
 --- !u!212 &212600637078254738
 SpriteRenderer:
   m_ObjectHideFlags: 1

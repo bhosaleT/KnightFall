@@ -14,6 +14,8 @@ public class LevelManager : MonoBehaviour {
 
     public int coinCount;
 
+    public AudioSource coinSound;
+
     public Image healthFull;
 
     public Sprite heartFull;
@@ -27,6 +29,19 @@ public class LevelManager : MonoBehaviour {
 
     private bool isRespawning;
 
+    public bool invinsible;
+
+    public Text livesText;
+    public int CurrentLives;
+    public int startingLives;
+
+    public GameObject gameOverScreen;
+
+    public AudioSource levelMusic;
+    public AudioSource gameOverMusic;
+    
+    public ResetOnRespawn[] objectsToReset;
+
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<PlayerController>();
@@ -34,6 +49,12 @@ public class LevelManager : MonoBehaviour {
 
 
         healthCount = maxHealth;
+
+        objectsToReset = FindObjectsOfType<ResetOnRespawn>();
+
+        CurrentLives = startingLives;
+        livesText.text = "X " + CurrentLives;
+        
 	}
 	
 	// Update is called once per frame
@@ -41,13 +62,29 @@ public class LevelManager : MonoBehaviour {
         if (healthCount <= 0 && !isRespawning)
         {
             Respawn();
+            
             isRespawning = true;
         }
 	}
 
     public void Respawn()
     {
-        StartCoroutine("RespawnCo");
+        CurrentLives -= 1;
+        livesText.text = "X " + CurrentLives;
+
+        if (CurrentLives > 0)
+        {
+            StartCoroutine("RespawnCo");
+        }
+        else if(CurrentLives == 0)
+        {
+            player.gameObject.SetActive(false);
+            gameOverScreen.SetActive(true);
+            levelMusic.Stop();
+            gameOverMusic.Play();
+        }
+
+       
     }
 
     public IEnumerator RespawnCo()
@@ -55,26 +92,54 @@ public class LevelManager : MonoBehaviour {
         player.gameObject.SetActive(false);
         Instantiate(deathSplosion, player.transform.position, player.transform.rotation);
         yield return new WaitForSeconds(waitToRespawn);
-
+       
         healthCount = maxHealth;
         isRespawning = false;
         UpdateHeartMeter();
 
+        coinCount = 0;
+        myCoinText.text = "X " + coinCount;
+
         player.transform.position = player.respawnPosition;
         player.gameObject.SetActive(true);
-       
+
+        for (int i = 0; i < objectsToReset.Length; i++)
+        {
+            objectsToReset[i].gameObject.SetActive(true);
+            objectsToReset[i].ResetObject();
+        }
+
     }
 
     public void AddCoins(int coinsToAdd)
     {
         coinCount += coinsToAdd;
-        Debug.Log(coinCount);
+        //Debug.Log(coinCount);
         myCoinText.text = "X " + coinCount;
+
+        coinSound.Play();
     }
 
     public void DamagePlayer(int damageToTake)
     {
-        healthCount -= damageToTake;
+        if (!invinsible)
+        {
+            player.hurtSound.Play();
+            healthCount -= damageToTake;
+            UpdateHeartMeter();
+            player.KnockBack();
+        }
+    }
+
+    public void GiveHealth(int healthToGive)
+    {
+        healthCount += healthToGive;
+
+        if (healthCount > maxHealth)
+        {
+            healthCount = maxHealth;
+        }
+
         UpdateHeartMeter();
     }
 
