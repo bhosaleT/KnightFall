@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour {
     private float invincibilityCounter;
 
     public AudioSource hurtSound;
+    public TextBoxManager dialogueBox;
     
+    public bool canMove;
 
 	// Use this for initialization
 	void Start () {
@@ -41,45 +43,49 @@ public class PlayerController : MonoBehaviour {
         myAnim = GetComponent<Animator>();
         theLevelManager = FindObjectOfType<LevelManager>();
         respawnPosition = transform.position;
+        dialogueBox = FindObjectOfType<TextBoxManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);// this draws a virtual circle and then checks all the attributes
-        if (knockBackCounter <= 0)
+        if (canMove)
         {
-            if (Input.GetAxisRaw("Horizontal") > 0f) // if input on horizontal axis is greater that zero (RIGHT).
+            if (knockBackCounter <= 0)
             {
-                playerBody.velocity = new Vector3(moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
-                transform.localScale = new Vector3(1f, 1f, 1f);
-            }
-            else if (Input.GetAxisRaw("Horizontal") < 0f) // if input on horizontal axis is less that zero. (LEFT)
-            {
-                playerBody.velocity = new Vector3(-moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
-            else
-            {
-                playerBody.velocity = new Vector3(0f, playerBody.velocity.y, 0f);//stop when no input.
-            }
+                if (Input.GetAxisRaw("Horizontal") > 0f) // if input on horizontal axis is greater that zero (RIGHT).
+                {
+                    playerBody.velocity = new Vector3(moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
+                    transform.localScale = new Vector3(1f, 1f, 1f);
+                }
+                else if (Input.GetAxisRaw("Horizontal") < 0f) // if input on horizontal axis is less that zero. (LEFT)
+                {
+                    playerBody.velocity = new Vector3(-moveSpeed, playerBody.velocity.y, 0f); // keep the y speed same as it is, and make the z 0 because no need to use z in 2D game.
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }
+                else
+                {
+                    playerBody.velocity = new Vector3(0f, playerBody.velocity.y, 0f);//stop when no input.
+                }
 
-            if (Input.GetButtonDown("Jump") && isGrounded)
-            {
+                if (Input.GetButtonDown("Jump") && isGrounded)
+                {
 
-                playerBody.velocity = new Vector3(playerBody.velocity.x, jumpSpeed, 0f); //the x axis should stay the same to add direction to the jump.
-            }
-          
-            if (invincibilityCounter > 0)
-            {
-                invincibilityCounter -= Time.deltaTime;
-            }
+                    playerBody.velocity = new Vector3(playerBody.velocity.x, jumpSpeed, 0f); //the x axis should stay the same to add direction to the jump.
+                }
 
-            if (invincibilityCounter <= 0 )
-            {
-                theLevelManager.invinsible = false;
-            }
+                if (invincibilityCounter > 0)
+                {
+                    invincibilityCounter -= Time.deltaTime;
+                }
 
+                if (invincibilityCounter <= 0)
+                {
+                    theLevelManager.invinsible = false;
+                }
+
+            }
         }
         if (knockBackCounter > 0)
         {

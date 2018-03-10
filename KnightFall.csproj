@@ -350,6 +350,7 @@
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Scripts\ActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CheckPointScript.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
@@ -363,10 +364,12 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ResetOnRespawn.cs" />
     <Compile Include="Assets\Scripts\Stomp.cs" />
+    <Compile Include="Assets\Scripts\TextBoxManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Add-Ons\2D Extras\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
     <None Include="Assets\Add-Ons\Cinemachine\ReleaseNotes.txt" />
+    <None Include="Assets\Text\NPC.txt" />
     <None Include="Assets\Text\demo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

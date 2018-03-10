@@ -19,14 +19,16 @@ public class CheckPointScript : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
             theSpriteRenderer.sprite = flagOpen; //changing the sprite. 
         }
-        else {
+        else
+        {
             theSpriteRenderer.sprite = flagClosed;
         }
     }
+    
 }
