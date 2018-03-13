@@ -365,6 +365,10 @@
     <Compile Include="Assets\Scripts\ResetOnRespawn.cs" />
     <Compile Include="Assets\Scripts\Stomp.cs" />
     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+    <Compile Include="Assets\SkeletonController.cs" />
+    <Compile Include="Assets\SlashEnemy.cs" />
+    <Compile Include="Assets\startAttacking.cs" />
+    <Compile Include="Assets\TriggerAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Add-Ons\2D Extras\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />

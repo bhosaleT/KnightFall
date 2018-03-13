@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour {
     
     public bool canMove;
 
+    public bool isAttacking;
+    public GameObject attackBox;
+
 	// Use this for initialization
 	void Start () {
 
@@ -75,6 +78,17 @@ public class PlayerController : MonoBehaviour {
                     playerBody.velocity = new Vector3(playerBody.velocity.x, jumpSpeed, 0f); //the x axis should stay the same to add direction to the jump.
                 }
 
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    isAttacking = true;
+                    attackBox.SetActive(true);
+                }
+                else if (Input.GetButtonUp("Fire1"))
+                {
+                    isAttacking = false;
+                    attackBox.SetActive(false);
+                }
+
                 if (invincibilityCounter > 0)
                 {
                     invincibilityCounter -= Time.deltaTime;
@@ -105,6 +119,7 @@ public class PlayerController : MonoBehaviour {
 
         myAnim.SetFloat("Speed", Mathf.Abs(playerBody.velocity.x)); //math function.abs gives the absolute value.[unsigned]
         myAnim.SetBool("Ground", isGrounded);
+        myAnim.SetBool("Attack", isAttacking);
 
         if (playerBody.velocity.y < 0)
         {
