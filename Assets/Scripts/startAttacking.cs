@@ -17,8 +17,8 @@ public class startAttacking : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-      
-	}
+        myAnim.SetBool("attackPlayer", startAxing);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,6 +33,7 @@ public class startAttacking : MonoBehaviour {
         if (collision.tag == "Player")
         {
             StopCoroutine("AttackOn");
+            startAxing = false;
         }
     }
 
@@ -41,7 +42,7 @@ public class startAttacking : MonoBehaviour {
     {
         startAxing = true;
         attackBox.SetActive(true);
-        myAnim.SetBool("attackPlayer", startAxing);
+       
         yield return new WaitForSeconds(seconds);
 
     }
