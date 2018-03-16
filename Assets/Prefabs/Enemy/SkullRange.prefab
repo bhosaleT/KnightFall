@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50821747320542322}
   - component: {fileID: 114410140415490380}
   - component: {fileID: 61329563828237926}
+  - component: {fileID: 114281183698505388}
   m_Layer: 10
   m_Name: Skeleton
   m_TagString: Enemy
@@ -119,8 +120,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123499371983914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.25, y: -0.6, z: -0.04162114}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.67, y: -0.57, z: -0.04162114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4590325845372190}
   - {fileID: 4812321511039974}
@@ -134,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235322104907180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.46, y: -0.73, z: 0}
+  m_LocalPosition: {x: -4.79, y: -0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4763785437245000}
@@ -172,8 +173,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406252717005228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.808362, y: 8.10395, z: 0.04162114}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 103.04131, y: -5.05358, z: 0.15099615}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4436283550672062}
@@ -302,7 +303,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.76, y: 0}
+  m_Offset: {x: 6.49, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -313,7 +314,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.94, y: 1}
+  m_Size: {x: 6.44, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &95431760800856746
 Animator:
@@ -355,6 +356,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 2
+--- !u!114 &114281183698505388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123499371983914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd0acf7a3c2fc46987a9905a41893e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114290000750093366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,7 +381,7 @@ MonoBehaviour:
   myAnim: {fileID: 0}
   startAxing: 0
   attackBox: {fileID: 1286691244668488}
-  seconds: 0.25
+  seconds: 0.05
 --- !u!114 &114410140415490380
 MonoBehaviour:
   m_ObjectHideFlags: 1

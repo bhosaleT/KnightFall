@@ -270,7 +270,7 @@ MonoBehaviour:
   myAnim: {fileID: 0}
   startAxing: 0
   attackBox: {fileID: 1238845857041582}
-  seconds: 0.25
+  seconds: 0.05
 --- !u!114 &114355554067602106
 MonoBehaviour:
   m_ObjectHideFlags: 1
