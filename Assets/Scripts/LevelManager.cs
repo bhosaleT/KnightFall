@@ -144,7 +144,7 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void UpdateHeartMeter()
-    {
+    { 
         switch(healthCount)
         {
             case 4: healthFull.sprite = heartFull;
