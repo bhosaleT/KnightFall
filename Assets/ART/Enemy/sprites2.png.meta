@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: b47f704d5120fc246b4a624e77621269
-timeCreated: 1523811601
+timeCreated: 1523854742
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: sprites2_0
+    21300002: sprites2_1
+    21300004: sprites2_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -47,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 20
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -108,6 +110,34 @@ TextureImporter:
         y: 509
         width: 21
         height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites2_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 416
+        width: 3
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites2_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 441
+        width: 7
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
