@@ -6,5 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Jungle Area/Main Menu.unity
+    guid: 352d1fe82a2c3fd48b30c7e0e93ea723
+  - enabled: 1
+    path: Assets/Scenes/Jungle Area/LevelSelect.unity
+    guid: 8ca1a6e75fb74034b9b6b211fdf26563
+  - enabled: 1
     path: Assets/Scenes/Jungle Area/JungleLevelOne.unity
     guid: d33439b27c710cd4d89bd891097c2e62
+  - enabled: 1
+    path: Assets/Scenes/Jungle Area/Level2.unity
+    guid: 53768242033dc044d943f772f66eb07a
+  - enabled: 1
+    path: Assets/Scenes/Jungle Area/Level3.unity
+    guid: 2802f767bb684e34a8959443cb741eac

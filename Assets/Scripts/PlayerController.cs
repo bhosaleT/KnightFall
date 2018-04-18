@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
-    private Rigidbody2D playerBody; //rigidbody variable.
+    public Rigidbody2D playerBody; //rigidbody variable.
 
     public float jumpSpeed;// jump distance variable.
 
@@ -34,26 +34,26 @@ public class PlayerController : MonoBehaviour {
     public TextBoxManager dialogueBox;
     
     public bool canMove;
-
+     
+   
     public bool isAttacking;
     public GameObject attackBox;
 
 	// Use this for initialization
 	void Start () {
-
         //Getting the rigidbody from the player GameObject.
         playerBody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         theLevelManager = FindObjectOfType<LevelManager>();
         respawnPosition = transform.position;
         dialogueBox = FindObjectOfType<TextBoxManager>();
-	}
-	
+       
+    }
 	// Update is called once per frame
 	void Update () {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);// this draws a virtual circle and then checks all the attributes
-        if (canMove)
+        if (canMove )
         {
             if (knockBackCounter <= 0)
             {

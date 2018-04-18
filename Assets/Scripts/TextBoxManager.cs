@@ -16,12 +16,12 @@ public class TextBoxManager : MonoBehaviour {
 
     public PlayerController player;
     public bool isDialogueOn;
-
+    
     public bool isActive;
 	// Use this for initialization
 	void Start ()
     {
-        
+       
         player = FindObjectOfType<PlayerController>();
 
         if (textFile != null)
@@ -33,7 +33,7 @@ public class TextBoxManager : MonoBehaviour {
             endAtLine = textLines.Length - 1;
         }
 
-        if (isActive)
+        if (isActive )
         {
             EnableTextBox();
         }

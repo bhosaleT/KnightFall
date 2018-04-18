@@ -45,7 +45,22 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<PlayerController>();
-        myCoinText.text = "X 0";
+       
+
+        if (PlayerPrefs.HasKey("CoinCount"))
+        {
+            coinCount = PlayerPrefs.GetInt("CoinCount");
+        }
+        myCoinText.text = "X " + coinCount;
+
+        if (PlayerPrefs.HasKey("PlayerLives"))
+        {
+            CurrentLives = PlayerPrefs.GetInt("PlayerLives");
+        }
+        else
+        {
+            CurrentLives = startingLives;
+        }
 
 
         healthCount = maxHealth;
