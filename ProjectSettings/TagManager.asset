@@ -8,6 +8,7 @@ TagManager:
   - CheckPoint
   - MovingPlatform
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

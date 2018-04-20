@@ -19,6 +19,11 @@ public class GameOver : MonoBehaviour {
 		
 	}
 
+    //16|4 Had problem with the GameOver screen, the buttons did not respond to the key presses.
+    //19|4 problem solved In the project Hierarchy make sure the Game Over Screen is at the top so its not ovelapped
+    //Being overlapped stops the buttons from working.
+
+
     public void Restart()
     {
         PlayerPrefs.SetInt("CoinCount", 0);

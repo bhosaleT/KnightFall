@@ -352,6 +352,7 @@
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineTrack.cs" />
     <Compile Include="Assets\Scripts\ActivateTextAtLine.cs" />
+    <Compile Include="Assets\Scripts\BossScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CheckPointScript.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />

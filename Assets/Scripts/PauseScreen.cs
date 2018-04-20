@@ -22,7 +22,7 @@ public class PauseScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Made a new input method in Unity for escape button and the Start button in Xbox controller to pause the game.
         if (Input.GetButtonDown("Pause"))
         {
             if (Time.timeScale == 0f)

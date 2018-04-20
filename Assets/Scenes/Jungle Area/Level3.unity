@@ -28924,7 +28924,7 @@ Prefab:
     - target: {fileID: 114919153437198740, guid: 3f0bef2474b3ebb478556fea3541b99f,
         type: 2}
       propertyPath: levelToLoad
-      value: LevelSelect
+      value: BossLevel
       objectReference: {fileID: 0}
     - target: {fileID: 114919153437198740, guid: 3f0bef2474b3ebb478556fea3541b99f,
         type: 2}
@@ -31345,11 +31345,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4929527355438400, guid: 051c5c54c41eec947bb188e07ad7faea, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -24.52295
+      value: -24.113295
       objectReference: {fileID: 0}
     - target: {fileID: 4980471129971972, guid: 051c5c54c41eec947bb188e07ad7faea, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -24.52295
+      value: -24.113295
       objectReference: {fileID: 0}
     - target: {fileID: 4980471129971972, guid: 051c5c54c41eec947bb188e07ad7faea, type: 2}
       propertyPath: m_LocalPosition.y

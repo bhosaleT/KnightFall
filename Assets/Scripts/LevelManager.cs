@@ -39,6 +39,8 @@ public class LevelManager : MonoBehaviour {
 
     public AudioSource levelMusic;
     public AudioSource gameOverMusic;
+
+    public bool respawnCoActive;
     
     public ResetOnRespawn[] objectsToReset;
 
@@ -104,10 +106,13 @@ public class LevelManager : MonoBehaviour {
 
     public IEnumerator RespawnCo()
     {
+        respawnCoActive = true;
         player.gameObject.SetActive(false);
         Instantiate(deathSplosion, player.transform.position, player.transform.rotation);
         yield return new WaitForSeconds(waitToRespawn);
-       
+
+
+        respawnCoActive = false;
         healthCount = maxHealth;
         isRespawning = false;
         UpdateHeartMeter();
