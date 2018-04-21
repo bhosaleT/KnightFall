@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 
     public string firstLevel;
     public string LevelSelect;
+    public string controls;
     // Use this for initialization
     void Start()
     {
@@ -27,6 +28,11 @@ public class MainMenu : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene(LevelSelect);
+    }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene(controls);
     }
 
     public void QuitGame()

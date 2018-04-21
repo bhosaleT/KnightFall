@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Jungle Area/Level3.unity
+- path: Assets/Scenes/Jungle Area/JungleLevelOne.unity
   isLoaded: 1
   isActive: 1

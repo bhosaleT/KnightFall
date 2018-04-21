@@ -41,6 +41,10 @@ public class BossScript : MonoBehaviour {
 
     public bool waitingForRespawn;
 
+    public GameObject healthPotion;
+
+    public Transform healthPotionPosition;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -78,6 +82,7 @@ public class BossScript : MonoBehaviour {
             theBoss.transform.position = RightPoint.position;
             bossRight = true;
             currentHealth = startingHealth;
+            enemyHealthText.text = startingHealth + " X";
             timeBetweenDrops = timeBetweenDropsStore;
             waitingForRespawn = false;
         }

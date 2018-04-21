@@ -10,7 +10,7 @@ public class LevelEnd : MonoBehaviour
     public string levelToLoad;
     public LevelManager theLevelManager;
     private PlayerController thePlayer;
-    private TextBoxManager theTextBox;
+
     public float waitToMove;
     public float waitToLoad;
     public Sprite flagOpen;
@@ -21,7 +21,7 @@ public class LevelEnd : MonoBehaviour
     {
         theLevelManager = FindObjectOfType<LevelManager>();
         thePlayer = FindObjectOfType<PlayerController>();
-        theTextBox = FindObjectOfType<TextBoxManager>();
+        
         theSpriteRenderer = FindObjectOfType<SpriteRenderer>();
     }
 

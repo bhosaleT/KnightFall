@@ -1,11 +1,14 @@
 WindowsStandalone
 SceneListBegin?
 Assets/Scenes/Jungle Area/Main Menu.unity
+Assets/Scenes/Jungle Area/Intro.unity
 Assets/Scenes/Jungle Area/LevelSelect.unity
 Assets/Scenes/Jungle Area/JungleLevelOne.unity
 Assets/Scenes/Jungle Area/Level2.unity
 Assets/Scenes/Jungle Area/Level3.unity
+Assets/Scenes/Jungle Area/BossLevel.unity
 SceneListEnd?
+42e97faaef6d03a6dcde8256ffe5e114 Assembly-CSharp.dll:.PauseScreen
 9b9c71cf06a525199c2eb4d3be433bc2 Assembly-CSharp.dll:Cinemachine.CinemachineStateDrivenCamera
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -56,7 +59,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 bc65feed15084818a199f9f13bf88b2b Assembly-CSharp.dll:.PlayerController
-3733baee249aa4517a241b51f7bf8401 Assembly-CSharp.dll:.LevelManager
+8947ca9c37f547a1b83430d7ca41a2e8 Assembly-CSharp.dll:.LevelManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -120,6 +123,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+d83978bacd13156eaa840994f91b7ad9 Assembly-CSharp.dll:.GameOver
 79e85ea1b6e20d92f479008c6c20cf6f Assembly-CSharp.dll:.Stomp
 43a98e447c8552b8a72bf20dd4b11e5b Assembly-CSharp.dll:Cinemachine.CinemachineFreeLook
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -182,6 +186,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 001a9ae67b787cecb49bd1f8ba7b7051 Assembly-CSharp.dll:.MainMenu
 45b80f4efaa9965abdb5e3c5469bb7d3 Assembly-CSharp.dll:.SkeletonController
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
+c8f572175fa69e795e577c662d2d87a2 Assembly-CSharp.dll:.DialogueManager
 5e835ee80ac0297e0516cffefd8e13e9 Assembly-CSharp.dll:Cinemachine.CinemachineCollider
 0f54a2b60c93ab3dd560d125a2b60197 Assembly-CSharp.dll:Cinemachine.CinemachineBlenderSettings
 0d7c8b598ec1808b6d1d494e099085bb Assembly-CSharp.dll:.startAttacking
@@ -198,9 +203,12 @@ f739fe68956c7babcc274f024cbc4a87 Assembly-CSharp.dll:Cinemachine.CinemachineSmoo
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.TerrainTile
 20c5b8f1fc21aaa0bbb1fb1a635fe31b Assembly-CSharp.dll:.LevelDoor
 bca8111b1773a3b4887eaeb8def2613b Assembly-CSharp.dll:.LevelEnd
+ca85baa647772d40e44841a501c07fdc Assembly-CSharp.dll:.DialogueTrigger
+109d3fe33c201c95bc23ab2e2d7b201a Assembly-CSharp.dll:.BossScript
 ef47b5b296e56702c76218de521ccc37 Assembly-CSharp.dll:Cinemachine.CinemachineBrain
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
 506e030fa92c58e7a9fb2a4b86130357 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SlashEnemy
 9dd74a41363b134db6b934985dfd2f92 Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetOnRespawn
+1592a3f0c6108c798d94c06fdd247c3f Assembly-CSharp.dll:.IntroScreen

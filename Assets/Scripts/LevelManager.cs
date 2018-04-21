@@ -81,9 +81,10 @@ public class LevelManager : MonoBehaviour {
             Respawn();
             
             isRespawning = true;
+         
         }
 	}
-
+   
     public void Respawn()
     {
         CurrentLives -= 1;

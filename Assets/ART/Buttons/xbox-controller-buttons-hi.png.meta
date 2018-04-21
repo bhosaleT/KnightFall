@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: eb54342e51080f0469cf9a4fcd1abea4
-timeCreated: 1520669434
+timeCreated: 1524337816
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: xbox-controller-buttons-hi_0
+    21300002: xbox-controller-buttons-hi_1
+    21300004: xbox-controller-buttons-hi_2
+    21300006: xbox-controller-buttons-hi_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,6 +111,48 @@ TextureImporter:
         y: 0
         width: 199
         height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: xbox-controller-buttons-hi_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 193
+        width: 200
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: xbox-controller-buttons-hi_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 376
+        width: 202
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: xbox-controller-buttons-hi_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 200
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
