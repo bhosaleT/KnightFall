@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jungle Area/CONTROLS.unity
     guid: 85c584d638326a34196a6ae7924eb1d7
+  - enabled: 1
+    path: Assets/_Complete-Game/_Complete-Game.unity
+    guid: 72d362146ea8845739db4749fdcbe96d
