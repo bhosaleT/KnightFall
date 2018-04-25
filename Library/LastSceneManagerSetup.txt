@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Jungle Area/Level2.unity
+- path: Assets/Scenes/Jungle Area/Main Menu.unity
   isLoaded: 1
   isActive: 1

@@ -23,7 +23,7 @@ public class LevelDoor : MonoBehaviour {
       
         if (other.tag == "Player")
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Jump"))
             {
                 SceneManager.LoadScene(levelToLoad);
             }

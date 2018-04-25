@@ -9,10 +9,6 @@ TagManager:
   - MovingPlatform
   - Enemy
   - Boss
-  - Exit
-  - Food
-  - coin
-  - Soda
   layers:
   - Default
   - TransparentFX
@@ -52,15 +48,6 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Floor
-    uniqueID: 185451805
-    locked: 0
-  - name: Items
-    uniqueID: 561563021
-    locked: 0
-  - name: Units
-    uniqueID: 2089261291
     locked: 0
   - name: BackgroundPlants
     uniqueID: 338270173

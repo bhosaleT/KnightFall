@@ -1654,7 +1654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686757593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.608242, y: 2.355638, z: -30.003906}
+  m_LocalPosition: {x: 11.532984, y: 2.355638, z: -30.003906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765438027}
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 757373493}
   - component: {fileID: 757373494}
   m_Layer: 9
-  m_Name: PlayerMainGame
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47645,7 +47645,7 @@ MonoBehaviour:
   rightPlatform: {fileID: 2011051612}
   leftPlatform: {fileID: 511996240}
   takeDamage: 0
-  startingHealth: 4
+  startingHealth: 5
   currentHealth: 0
   theCheckPoint: {fileID: 1681833577}
   theLevelEnd: {fileID: 921870048}
@@ -52304,7 +52304,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875645104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.608242, y: 2.355638, z: -30.003906}
+  m_LocalPosition: {x: 11.532984, y: 2.355638, z: -30.003906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 150211066}
