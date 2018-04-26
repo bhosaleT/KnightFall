@@ -31,10 +31,12 @@ public class PatrollingEnemy : MonoBehaviour {
         if (movingRight)
         {
             myRigidBody.velocity = new Vector3(moveSpeed, myRigidBody.velocity.y, 0f);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
         else
         {
             myRigidBody.velocity = new Vector3(-moveSpeed, myRigidBody.velocity.y, 0f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
 	}
 }

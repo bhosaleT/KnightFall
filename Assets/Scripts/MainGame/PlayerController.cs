@@ -145,6 +145,7 @@ public class PlayerController : MonoBehaviour {
             // gameObject.SetActive(false); // disable the game object that is player.
             //transform.position = respawnPosition;
             theLevelManager.Respawn();
+            //theLevelManager.healthCount = 0;
         }
 
         if (other.tag == "CheckPoint")

@@ -7,6 +7,7 @@ Assets/Scenes/Jungle Area/JungleLevelOne.unity
 Assets/Scenes/Jungle Area/Level2.unity
 Assets/Scenes/Jungle Area/Level3.unity
 Assets/Scenes/Jungle Area/BossLevel.unity
+Assets/Scenes/Jungle Area/CONTROLS.unity
 SceneListEnd?
 42e97faaef6d03a6dcde8256ffe5e114 Assembly-CSharp.dll:.PauseScreen
 9b9c71cf06a525199c2eb4d3be433bc2 Assembly-CSharp.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -158,6 +159,7 @@ c3b726e1ef77ecefcf78c4586a6bf32e Assembly-CSharp.dll:Cinemachine.CinemachineTrac
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.PipelineTile
 df2c10c42e91822b360c181e067052cc Assembly-CSharp.dll:.CheckPointScript
 166f2fb08a5bd8e5be94b11ac3fce237 Assembly-CSharp.dll:Cinemachine.CinemachineTargetGroup
+1592a3f0c6108c798d94c06fdd247c3f Assembly-CSharp.dll:.IntroScreen
 01871d49a9abb3105a831dff099ec768 Assembly-CSharp.dll:Cinemachine.CinemachineTransposer
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -183,7 +185,7 @@ b430675453a3a7c2e21536dbf1a5441a Assembly-CSharp.dll:.MovingObject
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 879db55796310b9ecf6f670c91db1b42 Assembly-CSharp.dll:Cinemachine.CinemachineVirtualCamera
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
-001a9ae67b787cecb49bd1f8ba7b7051 Assembly-CSharp.dll:.MainMenu
+1dd32b347a4f9efe47b3c508582a228c Assembly-CSharp.dll:.MainMenu
 45b80f4efaa9965abdb5e3c5469bb7d3 Assembly-CSharp.dll:.SkeletonController
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 c8f572175fa69e795e577c662d2d87a2 Assembly-CSharp.dll:.DialogueManager
@@ -211,4 +213,3 @@ ef47b5b296e56702c76218de521ccc37 Assembly-CSharp.dll:Cinemachine.CinemachineBrai
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SlashEnemy
 9dd74a41363b134db6b934985dfd2f92 Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetOnRespawn
-1592a3f0c6108c798d94c06fdd247c3f Assembly-CSharp.dll:.IntroScreen

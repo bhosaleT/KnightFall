@@ -78,7 +78,9 @@ public class TextBoxManager : MonoBehaviour {
 
     public void DisableTextBox()
     {
+
         textBox.SetActive(false);
+
         isActive = false;
 
         

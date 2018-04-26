@@ -79,30 +79,31 @@ public class LevelManager : MonoBehaviour {
         if (healthCount <= 0 && !isRespawning)
         {
             Respawn();
-            
-            isRespawning = true;
          
         }
 	}
    
     public void Respawn()
     {
-        CurrentLives -= 1;
-        livesText.text = "X " + CurrentLives;
-
-        if (CurrentLives > 0)
+        if (!isRespawning)
         {
-            StartCoroutine("RespawnCo");
-        }
-        else if(CurrentLives == 0)
-        {
-            player.gameObject.SetActive(false);
-            gameOverScreen.SetActive(true);
-            levelMusic.Stop();
-            gameOverMusic.Play();
-        }
+            CurrentLives -= 1;
+            livesText.text = "X " + CurrentLives;
 
-       
+            if (CurrentLives > 0)
+            {
+                isRespawning = true;
+                StartCoroutine("RespawnCo");
+            }
+            else if (CurrentLives == 0)
+            {
+                player.gameObject.SetActive(false);
+                gameOverScreen.SetActive(true);
+                levelMusic.Stop();
+                gameOverMusic.Play();
+            }
+
+        }
     }
 
     public IEnumerator RespawnCo()
